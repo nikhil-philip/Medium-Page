@@ -16,10 +16,26 @@
   margin: 10px;
   text-align: center;
 }
-div[tabindex="0"]:hover, div[tabindex="0"]:focus{
+.nav-a:hover, .nav-a:focus{
   background-color: black;
+  color: whitesmoke;
+}
+  .nav-a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .ham-a{
+    text-decoration: none;
+    color:black;
+  }
+  .ham-a:hover, .ham-a:focus{
+    text-decoration: none;
+    color:black;
   }
 
+body {
+  background-color: #EFDECD;
+}
 /* Initially Hamburger Menu will be hidden */
 .menu{
    display: none !important;
@@ -27,9 +43,6 @@ div[tabindex="0"]:hover, div[tabindex="0"]:focus{
 
 /* Mobile */
 @media screen and (max-width: 547px) {
-  body {
-    background-color: lightgreen;
-  }
   /* Show Hamburger Menu */
   .menu{
     display: block !important;
@@ -41,8 +54,8 @@ div[tabindex="0"]:hover, div[tabindex="0"]:focus{
 
 /* Desktop */
 @media screen and (min-width: 546px) {
-  body {
-    background-color: rgb(243, 134, 107);
+  .panel {
+    display: none !important;
   }
 }
 

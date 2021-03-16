@@ -8,31 +8,32 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/medium.css" />
+    <link rel="icon" href="images/compass.svg" />
     <script type="text/javascript" src="js/medium.js"></script>
     <link rel="stylesheet" href="css/fontawesome/css/all.css" />
-    <title>Hello, world!</title>
+    <title>Web Builder</title>
   </head>
   <body>
     <a class="visually-hidden-focusable skip-link" href="#content">Skip to main content</a> 
     <div class="flexible-nav">
-            <div class="flexible-nav-items"><i class="fas fa-drafting-compass"></i></div>
-            <div class="flexible-nav-items hide-menu-items" tabindex="0">HTML</div>
-            <div class="flexible-nav-items hide-menu-items" tabindex="0">CSS</div>
-            <div class="flexible-nav-items hide-menu-items" tabindex="0">JS</div>
-            <div class="flexible-nav-items hide-menu-items" tabindex="0">SQL</div>
-            <div class="flexible-nav-items hide-menu-items" tabindex="0">PYTHON</div>
-            <div class="flexible-nav-items hide-menu-items" tabindex="0">PHP</div>
+            <div class="flexible-nav-items"><i class="fas fa-drafting-compass" title="Web Builder logo"></i></div>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">HTML</a></div>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">CSS</a></div>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">JS</a></div>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">SQL</a></div>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">PYTHON</a></div>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">PHP</a></div>
             <div class="flexible-nav-items hide-menu-items" tabindex="0">MORE COURSES<span><i class="fa fa-caret-down" style="display: inline;"></i></span></div>
-            <button class="flexible-nav-items menu" id="menu" aria-expanded="false" onclick="ExpandOrCollapse()"><i class="fa fa-bars"></i></button>
+            <button class="flexible-nav-items menu" id="menu" aria-label="Hamburger Menu" aria-expanded="false" onclick="ExpandOrCollapse()"><i class="fa fa-bars"></i></button>
     </div>
     <div id="panel" class="panel">
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JS</div>
-        <div>SQL</div>
-        <div>PYTHON</div>
-        <div>PHP</div>
-        <div>MORE COURSES</div>
+        <div><a class="ham-a" href="#">HTML</a></div>
+        <div><a class="ham-a" href="#">CSS</a></div>
+        <div><a class="ham-a" href="#">JS</a></div>
+        <div><a class="ham-a" href="#">SQL</a></div>
+        <div><a class="ham-a" href="#">PYTHON</a></div>
+        <div><a class="ham-a" href="#">PHP</a></div>
+        <div><a class="ham-a" href="#">MORE COURSES</a></div>
     </div>
   </body>
 </html>
