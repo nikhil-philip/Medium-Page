@@ -1,3 +1,7 @@
+*{
+  box-sizing: inherit;
+}
+
 .skip-link{
   font-size: 10px;
   background-color: black;
@@ -35,6 +39,9 @@
 
 body {
   background-color: #EFDECD;
+  position: relative;
+  height:100vh;
+  
 }
 /* Initially Hamburger Menu will be hidden */
 .menu{
@@ -75,6 +82,7 @@ border-bottom: 1px solid grey;
 .panel > div:hover{
   background-color: bisque;
 }
+
 #image-- {
   height: 100%; 
 
@@ -100,3 +108,78 @@ border-bottom: 1px solid grey;
   .lan li:nth-child(4) {
     order: 2;
   }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width:100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer button{
+  border:none;
+  margin:5px;
+  background-color: greenyellow;
+  border-radius: 5rem;
+  cursor: pointer;
+
+}
+
+.modalAccept { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.hidden{
+  display: none;
+}
+
+.overlay { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0.8rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.modal-btn{
+  background-color: greenyellow;
+  border-radius: 5rem;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid green;
+}
+
+
+@media (max-width: 547px)
+{
+footer {
+   display: flex;
+}
+}
