@@ -11,33 +11,35 @@
     <link rel="icon" href="images/compass.svg" />
     <script defer type="text/javascript" src="js/medium.js"></script>
     <link rel="stylesheet" href="css/fontawesome/css/all.css" />
-    <title>Web Builder</title>
+    <title>Food Delivery Site</title>
   </head>
   <body>
-    <a class="visually-hidden-focusable skip-link" href="#content">Skip to main content</a> 
+    <div class="skip-link">
+    <a class="visually-hidden-focusable skip-link" href="#">Skip to main content</a> 
+    </div>
     <div class="flexible-nav">
             <div class="flexible-nav-items"><i class="fas fa-drafting-compass" title="Web Builder logo"></i></div>
             <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">HTML</a></div>
             <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">CSS</a></div>
             <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">JS</a></div>
-            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">SQL</a></div>
-            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">PYTHON</a></div>
             <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">PHP</a></div>
-            <div class="flexible-nav-items hide-menu-items" tabindex="0">MORE COURSES<span><i class="fa fa-caret-down" style="display: inline;"></i></span></div>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">MORE COURSES</a><span><i class="fa fa-caret-down" style="display: inline;"></i></span></div>
             <button class="flexible-nav-items menu" id="menu" aria-label="Hamburger Menu" aria-expanded="false" onclick="ExpandOrCollapse()"><i class="fa fa-bars"></i></button>
+            <input class="flexible-nav-items search-edit" placeholder="Search here..." type="text" aria-label="Search"/><button class="flexible-nav-items search-btn" onclick="search()">Search</button>
     </div>
     <div id="panel" class="panel">
         <div><a class="ham-a" href="#">HTML</a></div>
         <div><a class="ham-a" href="#">CSS</a></div>
         <div><a class="ham-a" href="#">JS</a></div>
-        <div><a class="ham-a" href="#">SQL</a></div>
-        <div><a class="ham-a" href="#">PYTHON</a></div>
         <div><a class="ham-a" href="#">PHP</a></div>
         <div><a class="ham-a" href="#">MORE COURSES</a></div>
     </div>
-    
+
+    <div id="snackbar">Seach Results Not Found</div> 
 <img id="image--" src="images/info.jpg" alt="Be accessible" tabindex="0"/>
     <br><br>
+
+ <div id="main">   
     <div>
       <h2>Different types of Languages</h2>
       <ul class="lan">
@@ -71,7 +73,7 @@
     </div>
     
     <div class="overlay hidden"></div>
-
+</div>
     <footer>
       <button class="accept-terms">Accept terms</button>
       <button class="accept-privacy">Accept privacy</button>
