@@ -119,9 +119,34 @@ body {
 
 #image--:focus {
   outline: 2px solid blue;
+  }
+
+  p{
+    font-size: 20px;
+  }
+  .lan{
+    font-size: 20px;
+  }
+  .lan_{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .lan li:first-child {
+    order: 5;
+  }
+  .lan li:nth-child(2) {
+    order: 4;
+  }
+  .lan li:nth-child(3) {
+    order: 3;
+  }
+  .lan li:nth-child(4) {
+    order: 2;
+  }
 }
 h2 {
-  font-size: 100%;
+  font-size: 1.3rem;
   text-decoration: underline;
 }
 .lan {
@@ -140,7 +165,6 @@ h2 {
 .lan li:nth-child(4) {
   order: 2;
 }
-
 footer {
   position: relative;
   left: 0;
