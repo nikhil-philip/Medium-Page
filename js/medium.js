@@ -45,11 +45,13 @@ const lastFocusableElement = focusableContent[focusableContent.length - 1];
 function openmodal(){
   modalAccept.classList.remove('hidden');
   overlay.classList.remove('hidden');
+  // document.body.style.overflowY='hidden';
 }
 
 function closemodal(){
   modalAccept.classList.add('hidden');
   overlay.classList.add('hidden');
+  // document.body.style.overflowY='scroll';
 }
 termsButton.addEventListener('click',function(){
   closeModal.textContent="x"
@@ -57,14 +59,17 @@ termsButton.addEventListener('click',function(){
    openmodal();
     closeModal.setAttribute('tabindex',"-1");
     acceptButton.setAttribute('tabindex',"-1");
+     closeModal.focus();
   
 });
 privacyButton.addEventListener('click',function(){
   closeModal.setAttribute('tabindex',"0");
-    acceptButton.setAttribute('tabindex',"0");
+    acceptButton.setAttribute('tabindex',"-1");
   closeModal.textContent="x"
   modalHead.textContent="Accept privacy"
    openmodal();
+   closeModal.focus();
+   
    
 })
 
