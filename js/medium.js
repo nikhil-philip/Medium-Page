@@ -118,6 +118,9 @@ function search() {
   x.className = "show";
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
 }
+function myfunc() {
+  window.open("https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers_in_India","_blank");
+}
 
 //End Search
 
