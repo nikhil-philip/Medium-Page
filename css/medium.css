@@ -119,32 +119,32 @@ body {
 
 #image--:focus {
   outline: 2px solid blue;
-  }
-
-  p{
-    font-size: 20px;
-  }
-  .lan{
-    font-size: 20px;
-  }
-  .lan_{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .lan li:first-child {
-    order: 5;
-  }
-  .lan li:nth-child(2) {
-    order: 4;
-  }
-  .lan li:nth-child(3) {
-    order: 3;
-  }
-  .lan li:nth-child(4) {
-    order: 2;
-  }
 }
+
+p {
+  font-size: 20px;
+}
+.lan {
+  font-size: 20px;
+}
+.lan_ {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.lan li:first-child {
+  order: 5;
+}
+.lan li:nth-child(2) {
+  order: 4;
+}
+.lan li:nth-child(3) {
+  order: 3;
+}
+.lan li:nth-child(4) {
+  order: 2;
+}
+
 h2 {
   font-size: 1.3rem;
   text-decoration: underline;
@@ -315,4 +315,64 @@ td {
 }
 .response-table {
   overflow-x: auto;
+}
+
+/* on hover */
+
+.parent {
+  position: relative;
+  display: inline-block;
+}
+
+#popup {
+  height: 200px;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 8%;
+}
+
+/* text spacing */
+.reviewText {
+  color: #333;
+  background-color: #db944d;
+  margin: auto;
+  width: 250px;
+  height: 560px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* more course on hover */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: greenyellow;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: rgb(161, 161, 161);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nextPageContainer {
+  padding: 20px;
 }

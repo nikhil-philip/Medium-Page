@@ -20,18 +20,24 @@
     <div class="flexible-nav">
             <div class="flexible-nav-items"><i class="fas fa-drafting-compass" title="Web Builder logo"></i></div>
             <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">HTML</a></div>
-            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">CSS</a></div>
-            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">JS</a></div>
-            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">PHP</a></div>
-            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="#">MORE COURSES</a><span><i class="fa fa-caret-down" style="display: inline;"></i></span></div>
-            <button class="flexible-nav-items menu" id="menu" aria-label="Hamburger Menu" aria-expanded="false" onclick="ExpandOrCollapse()"><i class="fa fa-bars"></i></button>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="NextPage.html">CSS</a></div>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="NextPage.html">JS</a></div>
+            <div class="flexible-nav-items hide-menu-items"><a class="nav-a" href="NextPage.html">PHP</a></div>
+            <div class="flexible-nav-items hide-menu-items dropdown"><a class="nav-a" href="NextPage.html">MORE COURSES</a><span><i class="fa fa-caret-down" style="display: inline;"></i></span>
+              <div class="dropdown-content">
+                <a href="#">Python</a>
+                <a href="#">Node</a>
+                <a href="#">Angular 3</a>
+              </div>
+            </div>
+            <button class="flexible-nav-items menu" id="menu" aria-label="Hamburger Menu"  onclick="ExpandOrCollapse()"><i class="fa fa-bars"></i></button>
             <input class="flexible-nav-items search-edit" placeholder="Search here..." type="text" aria-label="Search"/><button class="flexible-nav-items search-btn" onclick="search()">Search</button>
     </div>
     <div id="panel" class="panel">
         <div><a class="ham-a" href="#">HTML</a></div>
-        <div><a class="ham-a" href="#">CSS</a></div>
-        <div><a class="ham-a" href="#">JS</a></div>
-        <div><a class="ham-a" href="#">PHP</a></div>
+        <div><a class="ham-a" href="NextPage.html">CSS</a></div>
+        <div><a class="ham-a" href="NextPage.html">JS</a></div>
+        <div><a class="ham-a" href="NextPage.html">PHP</a></div>
         <div><a class="ham-a" href="#">MORE COURSES</a></div>
     </div>
 
@@ -69,9 +75,10 @@
   <p>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes"... <a class="more" href="#">read more</a></p>
 </div>
 
-<div class="readmore">
+<div class="readmore parent">
 <h2>Java</h2>
-  <p>Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. ... Java is fast, secure, and reliable, therefore. It is widely used for developing Java applications in laptops, data centers, game consoles, scientific supercomputers, cell phones, etc... <a class="more" href="#">read more</a></p>
+  <p class="">Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. ... Java is fast, secure, and reliable, therefore. It is widely used for developing Java applications in laptops, data centers, game consoles, scientific supercomputers, cell phones, etc... <a class="more onHover" href="#">read more </a></p>
+  <div id="popup" class="hidden">Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies.Java is fast, secure, and reliable, therefore. It is widely used for developing Java applications in laptops, cell phones, etc</div>
 </div>
 
 <div class="readmore">
@@ -95,7 +102,7 @@
 
     <img class="image-text" src="images/knowledge-snip.PNG" alt="knowledge is power" >
 
-    <p id="weekend"><strong>Weekend classes</strong></p>
+    <h2 id="weekend">Weekend</h2>
 
     <table aria-labelledby="weekend">
       <tr>
@@ -121,7 +128,7 @@
     </table>
     <br>
     
-      <p><strong>Price for training in below table</strong></p>
+      <h2>Price for training in below table</h2>
   
     <div role="table" class="Table" >
       
@@ -136,7 +143,7 @@
               <p>Css</p>
           </div>
           <div class="Cell">
-              <p>javascript</p>
+              <p>java</p>
           </div>
       </div>
       <div class="Row">
@@ -170,7 +177,7 @@
 
     </div>
     <br><br>
-    <p id="testimonial"><strong>Testimonials</strong></p>
+    <h2 id="testimonial">Tsetimonials</h2>
     <p>&emsp;&emsp; The following table shows the performance of our 3 students from week-1 to week-10.The marks are out of 100.It shows that after taking course the performance of the students gradually increased.</p>
     <div class="response-table">
       <table aria-labelledby="testimonial">
@@ -234,6 +241,12 @@
     </div>
 
     <br>
+
+    <img style="width: 100%;"src="images/seperator-removebg-preview.png" alt="seperator line">
+    <div class="reviewText">
+      <h2>Our Review</h2>
+      <p>I really really love this course. The instructor is very concise about the lectures. He doesn't go off topic and explains everything in very clear and easy to understand way. I cannot see how you could possibly go wrong choosing this course. It has been by far the most helpful Javascript course I have seen so far in my two yrs of learning the language. I wish there were courses about other topics such as mysql and node.</p>
+    </div>
     
 </div>
 <div class="modalAccept hidden">
